@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{FA105945-3C86-4F9D-9507-F05B09CA69F2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Shop_Floor</RootNamespace>
+    <AssemblyName>ShopFloor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\miniatas\AppData\Roaming\ICSharpCode/SharpDevelop4.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <RunSourceAnalysis>False</RunSourceAnalysis>
+    <AssemblyOriginatorKeyFile>shopfloor.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ShopFloor.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 9.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c4e1bcde5201535, processorArchitecture=x86">
+      <HintPath>C:\Program Files (x86)\SecuGen\FDx SDK Pro for Windows\DotNET\Samples\C#\Matching\bin\Debug\SecuGen.FDxSDKPro.Windows.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UserControlsForShopFloor">
+      <HintPath>O:\Shop Floor Program\DLLs\UserControlsForShopFloor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BagMakingProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BagMakingProductionForm.Designer.cs">
+      <DependentUpon>BagMakingProductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DynamicToPropertyType.cs" />
+    <Compile Include="Classes\ParameterListQuerryLogic.cs" />
+    <Compile Include="Classes\PlateCreationSearchResults.cs" />
+    <Compile Include="Classes\PlateNumberInfo.cs" />
+    <Compile Include="Classes\PrintQCOpacity.cs" />
+    <Compile Include="Classes\SearchItem.cs" />
+    <Compile Include="ComboBoxItemClass.cs" />
+    <Compile Include="ConsumedFilmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsumedFilmForm.Designer.cs">
+      <DependentUpon>ConsumedFilmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentForm.Designer.cs">
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ShopfloorEnums.cs" />
+    <Compile Include="fingerPrintLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fingerPrintLoginForm.Designer.cs">
+      <DependentUpon>fingerPrintLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralTools\ConversionTools.cs" />
+    <Compile Include="GeneralTools\ExtentionMethods.cs" />
+    <Compile Include="InnolokProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InnolokProductionForm.Designer.cs">
+      <DependentUpon>InnolokProductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlateForms\PlateCreationBL\FinalizePlateProduction.cs" />
+    <Compile Include="PlateForms\PlateCreationBL\MakeQuerries.cs" />
+    <Compile Include="PlateForms\PlateCreationBL\PlateCreationTabLogic.cs" />
+    <Compile Include="PlateForms\PlateCreationBL\PlateDimensionQuerries.cs" />
+    <Compile Include="PlateForms\PlateCreationMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlateForms\PlateCreationMain.Designer.cs">
+      <DependentUpon>PlateCreationMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlateForms\PlateProperties\PlateCreationTotals.cs" />
+    <Compile Include="PlateForms\PlateProperties\PlateMakeDetails.cs" />
+    <Compile Include="PlateForms\PlateProperties\PlateTiffCalculations.cs" />
+    <Compile Include="PlateForms\PlateProperties\PlateTiffRowDisplay.cs" />
+    <Compile Include="PlateForms\PlateProperties\PlateTiffRowItems.cs" />
+    <Compile Include="PlateForms\PlateProperties\PlateTillDimensions.cs" />
+    <Compile Include="PlateForms\PlateProperties\PropertyRepository.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StartupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupForm.Designer.cs">
+      <DependentUpon>StartupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plate Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plate Inventory.Designer.cs">
+      <DependentUpon>Plate Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerFingerprintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerFingerprintForm.Designer.cs">
+      <DependentUpon>registerFingerprintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAdminForm.Designer.cs">
+      <DependentUpon>UserAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAForm.Designer.cs">
+      <DependentUpon>RAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobToDateStatsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobToDateStatsForm.Designer.cs">
+      <DependentUpon>JobToDateStatsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionEditForm.Designer.cs">
+      <DependentUpon>ProductionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickListForm.Designer.cs">
+      <DependentUpon>PickListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPrintPreviewDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyPrintPreviewDialogForm.Designer.cs">
+      <DependentUpon>MyPrintPreviewDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueForm.Designer.cs">
+      <DependentUpon>IssueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReworkProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReworkProductionForm.Designer.cs">
+      <DependentUpon>ReworkProductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlittingProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlittingProductionForm.Designer.cs">
+      <DependentUpon>SlittingProductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WipFinishingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WipFinishingForm.Designer.cs">
+      <DependentUpon>WipFinishingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaminatingQCCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaminatingQCCheckForm.Designer.cs">
+      <DependentUpon>LaminatingQCCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintingQCCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintingQCCheckForm.Designer.cs">
+      <DependentUpon>PrintingQCCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveAdhesivesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiveAdhesivesForm.Designer.cs">
+      <DependentUpon>ReceiveAdhesivesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobHistoryForm.Designer.cs">
+      <DependentUpon>JobHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetDecimalInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetDecimalInputForm.Designer.cs">
+      <DependentUpon>GetDecimalInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModulesClass.cs">
+    </Compile>
+    <Compile Include="ConvertClass.cs">
+    </Compile>
+    <Compile Include="FormatClass.cs">
+    </Compile>
+    <Compile Include="PrintClass.cs">
+    </Compile>
+    <Compile Include="DateTimePickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateTimePickerForm.Designer.cs">
+      <DependentUpon>DateTimePickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinishingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishingForm.Designer.cs">
+      <DependentUpon>FinishingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionForm.Designer.cs">
+      <DependentUpon>ProductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetInputForm.Designer.cs">
+      <DependentUpon>GetInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceivingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceivingForm.Designer.cs">
+      <DependentUpon>ReceivingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitlInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitlInformationForm.Designer.cs">
+      <DependentUpon>UnitlInformationForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+    </None>
+    <None Include="shopfloor.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BagMakingProductionForm.resx">
+      <DependentUpon>BagMakingProductionForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentForm.resx">
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsumedFilmForm.resx">
+      <DependentUpon>ConsumedFilmForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateTimePickerForm.resx">
+      <DependentUpon>DateTimePickerForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishingForm.resx">
+      <DependentUpon>FinishingForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fingerPrintLoginForm.resx">
+      <DependentUpon>fingerPrintLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InnolokProductionForm.resx">
+      <DependentUpon>InnolokProductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaminatingQCCheckForm.resx">
+      <DependentUpon>LaminatingQCCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plate Inventory.resx">
+      <DependentUpon>Plate Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlateForms\PlateCreationMain.resx">
+      <DependentUpon>PlateCreationMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintingQCCheckForm.resx">
+      <DependentUpon>PrintingQCCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerFingerprintForm.resx">
+      <DependentUpon>registerFingerprintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAdminForm.resx">
+      <DependentUpon>UserAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetDecimalInputForm.resx">
+      <DependentUpon>GetDecimalInputForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetInputForm.resx">
+      <DependentUpon>GetInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueForm.resx">
+      <DependentUpon>IssueForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobHistoryForm.resx">
+      <DependentUpon>JobHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobToDateStatsForm.resx">
+      <DependentUpon>JobToDateStatsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickListForm.resx">
+      <DependentUpon>PickListForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionEditForm.resx">
+      <DependentUpon>ProductionEditForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionForm.resx">
+      <DependentUpon>ProductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAForm.resx">
+      <DependentUpon>RAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceivingForm.resx">
+      <DependentUpon>ReceivingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReworkProductionForm.resx">
+      <DependentUpon>ReworkProductionForm.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlittingProductionForm.resx">
+      <DependentUpon>SlittingProductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PlateForms\PlateCreation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
